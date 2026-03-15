@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
+import rateLimit from "express-rate-limit";
 import analyzeRoutes from "./routes/analyzeRoutes.js";
 import authRoutes from "./routes/authRoutes.js";
 

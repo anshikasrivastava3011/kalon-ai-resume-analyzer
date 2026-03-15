@@ -83,9 +83,10 @@
 .copy-button {
   border: none;
   background: #eddcf9;
-  color: #774fa2;
-  padding: 10px 16px;
-  border-radius: 14px;
+  color: #8a63b3;
+  padding: 6px 12px;     
+  border-radius: 10px;   
+  font-size: 0.85rem;   
   font-weight: 700;
   cursor: pointer;
   transition: 0.2s ease;
