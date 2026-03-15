@@ -61,12 +61,20 @@ function UploadForm({
     <form className="form-card" onSubmit={handleSubmit}>
       <div className="field-group">
         <label className="label">Upload Resume (PDF or DOCX)</label>
-        <input
-          type="file"
-          accept=".pdf,.docx"
-          onChange={(event) => setResumeFile(event.target.files[0])}
-          className="file-input"
-        />
+
+        <label className="custom-file-upload">
+          <input
+            type="file"
+            accept=".pdf,.docx"
+            onChange={(event) => setResumeFile(event.target.files[0])}
+            className="hidden-file-input"
+          />
+
+          <span className="custom-file-button">Upload Resume</span>
+          <span className="custom-file-name">
+            {resumeFile ? resumeFile.name : "No file selected"}
+          </span>
+        </label>
       </div>
 
       <div className="field-group">

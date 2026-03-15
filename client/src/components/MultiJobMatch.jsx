@@ -90,12 +90,20 @@ function MultiJobMatch() {
       <form onSubmit={handleSubmit}>
         <div className="multi-field-group">
           <label className="multi-label">Upload Resume</label>
-          <input
-            type="file"
-            accept=".pdf,.docx"
-            className="multi-file-input"
-            onChange={(event) => setResumeFile(event.target.files[0])}
-          />
+
+          <label className="multi-custom-file-upload">
+            <input
+              type="file"
+              accept=".pdf,.docx"
+              className="multi-hidden-file-input"
+              onChange={(event) => setResumeFile(event.target.files[0])}
+            />
+
+            <span className="multi-custom-file-button">Upload Resume</span>
+            <span className="multi-custom-file-name">
+              {resumeFile ? resumeFile.name : "No file selected"}
+            </span>
+          </label>
         </div>
 
         <div className="multi-job-list">
@@ -113,7 +121,7 @@ function MultiJobMatch() {
                     placeholder="Role title"
                   />
                   <span className="edit-icon" title="Edit job title">
-                    ✏️
+                    ✎
                   </span>
                 </div>
 
@@ -128,7 +136,7 @@ function MultiJobMatch() {
                       : "Remove this job"
                   }
                 >
-                  ❌ Remove
+                  ✖ Remove
                 </button>
               </div>
 

@@ -1,0 +1,131 @@
+.feature-showcase {
+  margin: 34px 0 40px;
+  padding: 34px 0 10px;
+}
+
+.feature-showcase-header {
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto 30px;
+}
+
+.feature-showcase-tag {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #7c57a5;
+  background: rgba(171, 128, 224, 0.12);
+}
+
+.feature-showcase-header h2 {
+  font-size: clamp(1.9rem, 3vw, 2.8rem);
+  line-height: 1.2;
+  color: #45295f;
+  margin-bottom: 12px;
+}
+
+.feature-showcase-subtitle {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #7a668f;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+  width: 100%;
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(171, 128, 224, 0.14);
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow:
+    0 6px 18px rgba(93, 60, 124, 0.08),
+    0 14px 36px rgba(93, 60, 124, 0.12);
+
+  backdrop-filter: blur(10px);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 12px 28px rgba(93, 60, 124, 0.14),
+    0 24px 48px rgba(93, 60, 124, 0.18);
+}
+
+.feature-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  font-size: 1.4rem;
+  margin-bottom: 16px;
+  background: linear-gradient(135deg, #f2e9ff, #f9f5ff);
+  box-shadow: inset 0 0 0 1px rgba(171, 128, 224, 0.14);
+}
+
+.feature-card h3 {
+  font-size: 1.08rem;
+  color: #4e2f6f;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 0.96rem;
+  line-height: 1.65;
+  color: #76678a;
+}
+
+.feature-auth-cta {
+  text-align: center;
+  max-width: 720px;
+  margin: 38px auto 0;
+  padding: 10px 16px 0;
+}
+
+.feature-auth-cta h3 {
+  font-size: clamp(1.35rem, 2.5vw, 1.8rem);
+  color: #4b2d69;
+  margin-bottom: 10px;
+}
+
+.feature-auth-cta p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #7a668f;
+}
+
+@media (max-width: 980px) {
+  .feature-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .feature-showcase {
+    margin-top: 22px;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card {
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .feature-showcase-subtitle {
+    font-size: 0.95rem;
+  }
+}

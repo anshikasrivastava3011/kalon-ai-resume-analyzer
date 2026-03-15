@@ -1,10 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { signupUser, loginUser } from "../services/auth.js";
 import "./AuthCard.css";
 
-function AuthCard({ setUser, setIsAuthenticated }) {
-  const [mode, setMode] = useState("login");
+function AuthCard({ setUser, setIsAuthenticated, defaultMode = "login" }) {
+  const [mode, setMode] = useState(defaultMode);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -12,6 +12,10 @@ function AuthCard({ setUser, setIsAuthenticated }) {
   });
   const [authError, setAuthError] = useState("");
   const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setMode(defaultMode);
+  }, [defaultMode]);
 
   function handleChange(event) {
     setFormData({

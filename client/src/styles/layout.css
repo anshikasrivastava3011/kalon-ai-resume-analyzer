@@ -1,11 +1,13 @@
 .page {
   min-height: 100vh;
-  padding: 36px 18px 70px;
+  width: 100%;
 }
 
 .container {
-  max-width: 1080px;
+  width: 100%;
+  max-width: 1600px;
   margin: 0 auto;
+  padding: 28px 40px;
 }
 
 .hero {
@@ -49,5 +51,16 @@
 .dashboard-stack {
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 32px;
+  width: 100%;
+}
+section {
+  scroll-margin-top: 120px;
+}
+#auth-section {
+  margin: 18px auto 48px;
+  max-width: 720px;
+}
+#about-us {
+  scroll-margin-top: 120px;
 }

@@ -1,0 +1,78 @@
+.about-us-section {
+  width: 100%;
+  margin-top: 56px;
+}
+
+.about-us-card {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(191, 148, 228, 0.24);
+  box-shadow:
+    0 8px 20px rgba(122, 84, 160, 0.1),
+    0 22px 48px rgba(122, 84, 160, 0.16);
+  border-radius: 30px;
+  padding: 34px;
+}
+
+.about-us-tag {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #7c57a5;
+  background: rgba(171, 128, 224, 0.12);
+}
+
+.about-us-title {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  color: #4b2d69;
+  margin-bottom: 16px;
+}
+
+.about-us-text {
+  color: #6f5f82;
+  font-size: 1rem;
+  line-height: 1.85;
+  margin-bottom: 16px;
+}
+
+.about-us-meaning-box {
+  margin-top: 22px;
+  background: linear-gradient(135deg, #faf4ff, #f3e7fc);
+  border: 1px solid #e5d2f7;
+  border-radius: 22px;
+  padding: 22px;
+}
+
+.about-us-meaning-box h3 {
+  color: #5f437c;
+  font-size: 1.15rem;
+  margin-bottom: 12px;
+}
+
+.about-us-meaning-box p {
+  color: #5f506f;
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+
+.about-us-meaning-box p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .about-us-card {
+    padding: 24px;
+    border-radius: 24px;
+  }
+
+  .about-us-text {
+    font-size: 0.96rem;
+  }
+
+  .about-us-meaning-box {
+    padding: 18px;
+  }
+}
