@@ -1,0 +1,105 @@
+.bullet-card {
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(191, 148, 228, 0.22);
+  box-shadow: 0 18px 40px rgba(122, 84, 160, 0.08);
+  border-radius: 28px;
+  padding: 28px;
+  margin-top: 0;
+}
+
+.bullet-title {
+  font-size: 1.55rem;
+  color: #5b3d78;
+  margin-bottom: 10px;
+}
+
+.bullet-subtitle {
+  color: #726281;
+  margin-bottom: 18px;
+  line-height: 1.7;
+}
+
+.bullet-textarea {
+  width: 100%;
+  border: 1px solid #dcc8ef;
+  border-radius: 18px;
+  background: #fffafd;
+  padding: 14px 16px;
+  font-size: 1rem;
+  color: #4b395f;
+  outline: none;
+  resize: vertical;
+  min-height: 140px;
+  margin-bottom: 16px;
+  transition: 0.2s ease;
+}
+
+.bullet-textarea:focus {
+  border-color: #b985e2;
+  box-shadow: 0 0 0 4px rgba(185, 133, 226, 0.12);
+}
+
+.bullet-button {
+  background: linear-gradient(135deg, #b67ddf, #9f6dd7);
+  color: white;
+  border: none;
+  border-radius: 18px;
+  padding: 14px 22px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 10px 22px rgba(166, 109, 216, 0.22);
+  transition: 0.2s ease;
+}
+
+.bullet-button:hover {
+  transform: translateY(-1px);
+}
+
+.bullet-status {
+  margin-top: 14px;
+  color: #7c5ba2;
+  font-weight: 600;
+}
+
+.bullet-error {
+  margin-top: 14px;
+  color: #c44569;
+  font-weight: 600;
+}
+
+.bullet-result {
+  margin-top: 22px;
+  background: linear-gradient(135deg, #faf4ff, #f3e7fc);
+  border: 1px solid #e5d2f7;
+  border-radius: 20px;
+  padding: 18px;
+}
+
+.bullet-result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.bullet-result-header h3 {
+  color: #5f437c;
+}
+
+.copy-bullet-button {
+  border: none;
+  background: #eddcf9;
+  color: #774fa2;
+  padding: 10px 14px;
+  border-radius: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.bullet-result p {
+  color: #5f506f;
+  line-height: 1.8;
+}

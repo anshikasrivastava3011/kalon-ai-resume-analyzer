@@ -1,0 +1,37 @@
+.user-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(191, 148, 228, 0.22);
+  box-shadow: 0 18px 40px rgba(122, 84, 160, 0.08);
+  border-radius: 24px;
+  padding: 20px 24px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.user-greeting {
+  color: #7a6790;
+  margin-bottom: 4px;
+}
+
+.user-info h3 {
+  color: #5b3d78;
+  margin-bottom: 4px;
+}
+
+.user-info span {
+  color: #7c6c8d;
+}
+
+.logout-button {
+  border: none;
+  background: #f6e8ff;
+  color: #7b4ea7;
+  padding: 12px 18px;
+  border-radius: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}

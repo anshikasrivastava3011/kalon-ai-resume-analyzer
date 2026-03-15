@@ -1,0 +1,81 @@
+.ats-card {
+  background: linear-gradient(135deg, #fffafd, #fbf4ff);
+  border: 1px solid rgba(202, 175, 230, 0.45);
+  border-radius: 26px;
+  padding: 24px;
+  margin-top: 18px;
+}
+
+.ats-title {
+  font-size: 1.45rem;
+  color: #5b3d78;
+  margin-bottom: 18px;
+}
+
+.ats-top-score {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 22px;
+  flex-wrap: wrap;
+}
+
+.ats-score-badge {
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #eadbfa, #f2e6fd);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7a4fa8;
+  font-size: 1.55rem;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.ats-score-text h3 {
+  color: #5f437c;
+  margin-bottom: 6px;
+  font-size: 1.35rem;
+}
+
+.ats-score-text p {
+  color: #766785;
+  line-height: 1.7;
+}
+
+.ats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.ats-metric {
+  background: linear-gradient(135deg, #faf4ff, #f3e7fc);
+  border: 1px solid #e5d2f7;
+  border-radius: 18px;
+  padding: 16px;
+}
+
+.ats-label {
+  display: block;
+  color: #7a6790;
+  margin-bottom: 8px;
+  font-size: 0.94rem;
+}
+
+.ats-metric strong {
+  color: #5f437c;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .ats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ats-top-score {
+    align-items: flex-start;
+  }
+}

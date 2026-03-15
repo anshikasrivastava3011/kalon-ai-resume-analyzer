@@ -1,0 +1,39 @@
+.score-meter-card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background: linear-gradient(135deg, #f6edfc, #f1e4fb);
+  border: 1px solid #dcc2f3;
+  border-radius: 24px;
+  padding: 22px;
+  margin-bottom: 22px;
+}
+
+.score-meter-wrapper {
+  width: 116px;
+  height: 116px;
+  flex-shrink: 0;
+}
+
+.score-meter-text h3 {
+  font-size: 1.55rem;
+  color: #5f3f7f;
+  margin-bottom: 8px;
+}
+
+.score-meter-text p {
+  color: #7b5d99;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .score-meter-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .score-meter-text h3 {
+    font-size: 1.3rem;
+  }
+}
